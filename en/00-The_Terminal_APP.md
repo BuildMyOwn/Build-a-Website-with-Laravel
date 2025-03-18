@@ -50,7 +50,11 @@ Which user are you currently logged in as?
 
 Type this command:
 
-whoami![](./images/00-The_Terminal_APP_4.png)
+```bash
+whoami
+```
+
+![](./images/00-The_Terminal_APP_4.png)
 
 ### pwd
 
@@ -60,21 +64,37 @@ What is the current directory?
 
 Type this command:
 
-pwd![](./images/00-The_Terminal_APP_5.png)
+```bash
+pwd
+```
+
+![](./images/00-The_Terminal_APP_5.png)
 
 ### ls
 
 List all files and folders in the current directory:
 
-ls### cd
+```bash
+ls
+```
+
+### cd
 
 Change the current directory:
 
-cd ~/Download### rm
+```bash
+cd ~/Download
+```
+
+### rm
 
 delete(remove) a file
 
-rm temp.txt## Shell
+```bash
+rm temp.txt
+```
+
+## Shell
 
 The commands mentioned above belong the **shell**, which is a special user program that provides an interface for the user to use operating system services.
 

@@ -24,35 +24,51 @@ Here are some commonly used Laravel commands:
 
 To view all available Artisan commands, run:
 
-php artisan list### 2.&nbsp;Creating a New Controller
+php artisan list
+
+### 2.&nbsp;Creating a New Controller
 
 To create a new controller, use the make:controller command:
 
-php artisan make:controller MyController### 3.&nbsp;Running Migrations
+php artisan make:controller MyController
+
+### 3.&nbsp;Running Migrations
 
 To execute database migrations, use:
 
-php artisan migrate### 4.&nbsp;Rolling Back Migrations
+php artisan migrate
+
+### 4.&nbsp;Rolling Back Migrations
 
 To roll back the last migration batch, use:
 
-php artisan migrate:rollback### 5.&nbsp;Creating a Model
+php artisan migrate:rollback
+
+### 5.&nbsp;Creating a Model
 
 To create a new Eloquent model, run:
 
-php artisan make:model MyModel### 6.&nbsp;Generating a Migration
+php artisan make:model MyModel
+
+### 6.&nbsp;Generating a Migration
 
 To create a new migration file, use:
 
-php artisan make:migration create_my_table### 7.&nbsp;Seeding the Database
+php artisan make:migration create_my_table
+
+### 7.&nbsp;Seeding the Database
 
 To seed the database with test data, run:
 
-php artisan db:seed### 8.&nbsp;Clearing Cache
+php artisan db:seed
+
+### 8.&nbsp;Clearing Cache
 
 To clear the application cache, use:
 
-php artisan cache:clear## Creating Custom Commands
+php artisan cache:clear
+
+## Creating Custom Commands
 
 Laravel also allows developers to create custom Artisan commands. Here’s how to do it:
 

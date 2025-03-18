@@ -8,7 +8,11 @@ PHP extensions are additional modules or libraries that enhance the functionalit
 
 ## List Extensions
 
-php -m## Install Extensions with PECL
+```bash
+php -m
+```
+
+## Install Extensions with PECL
 
 **PECL (PHP Extension Community Library)** is an extension library for PHP that provides many optional extensions.
 

@@ -22,7 +22,9 @@ https://laravel.com/docs/11.x
 
 检查 PHP 是否已安装
 
+```bash
 php -v
+```
 
 如果 PHP 未安装，请按照前面的文章安装 PHP。
 
@@ -34,15 +36,21 @@ Composer 是 PHP 的包管理器。它帮助你安装和更新项目的依赖。
 
 这里有点不同，Composer 的 -V 是大写的 V。
 
+```bash
 composer -V
+```
 
 你将看到：
 
+```bash
 Composer version 2.7.2 2024-03-11 17:12:18 PHP version 8.3.3 (/opt/homebrew/Cellar/php/8.3.3_1/bin/php)
+```
 
 如果 Composer 未安装，你将看到：
 
+```bash
 command not found: composer
+```
 
 如果是这种情况，让我们安装它。
 
@@ -50,11 +58,15 @@ command not found: composer
 
 运行这些命令：
 
+```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" php composer-setup.php php -r "unlink('composer-setup.php');"
+```
 
 然后
 
+```bash
 sudo mv composer.phar /usr/local/bin/composer
+```
 
 就这样！
 
@@ -64,15 +76,21 @@ sudo mv composer.phar /usr/local/bin/composer
 
 你可以使用以下命令安装 Node.js：
 
+```bash
 brew install node
+```
 
 安装完成后，在终端应用中输入此代码并按回车运行。
 
+```bash
 node -v
+```
 
 如果你看到以下输出，恭喜！你已成功安装 Node.js。
 
+```bash
 v22.4.1
+```
 
 ### Laravel
 
@@ -80,13 +98,17 @@ v22.4.1
 
 这个名字怎么样：luckara？
 
+```bash
 cd your_workspace_folder && composer create-project laravel/laravel luckara
+```
 
 ## 运行
 
 安装完成后，用 VSCode 打开项目。
 
+```bash
 cd luckara && code .
+```
 
 ![](./images/06-Laravel_2.png)
 
@@ -108,7 +130,9 @@ cd luckara && code .
 
 安装完成后，用 GitHub Desktop 打开项目：
 
+```bash
 github .
+```
 
 ![](./images/06-Laravel_6.png)
 

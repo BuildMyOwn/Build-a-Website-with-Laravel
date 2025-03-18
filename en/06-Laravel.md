@@ -22,7 +22,11 @@ Before creating your first Laravel project, make sure that your local machine ha
 
 Check if PHP is already installed
 
-php -vIf PHP is not installed, please follow the previous article to install PHP.
+```bash
+php -v
+```
+
+If PHP is not installed, please follow the previous article to install PHP.
 
 ### Composer
 
@@ -32,19 +36,39 @@ Check if Composer is already installed
 
 It's a bit different here, Composer's -V is an uppercase V.
 
-composer -VAnd you will see：
+```bash
+composer -V
+```
 
-Composer version 2.7.2 2024-03-11 17:12:18 PHP version 8.3.3 (/opt/homebrew/Cellar/php/8.3.3_1/bin/php)If Composere is not installed, you will see:
+And you will see：
 
-command not found: composerIf that's the case, let's install it.
+```bash
+Composer version 2.7.2 2024-03-11 17:12:18 PHP version 8.3.3 (/opt/homebrew/Cellar/php/8.3.3_1/bin/php)
+```
+
+If Composere is not installed, you will see:
+
+```bash
+command not found: composer
+```
+
+If that's the case, let's install it.
 
 Open the page: https://getcomposer.org/download/
 
 Run these commands:
 
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" php composer-setup.php php -r "unlink('composer-setup.php');"And
+```bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" php composer-setup.php php -r "unlink('composer-setup.php');"
+```
 
-sudo mv composer.phar /usr/local/bin/composerThat’s all!
+And
+
+```bash
+sudo mv composer.phar /usr/local/bin/composer
+```
+
+That’s all!
 
 ### Node.js
 
@@ -54,19 +78,35 @@ You can use the following command to install Node.js:
 
 brew install nodeAfter installation is complete, enter this code in the terminal app and hit enter to run.
 
-node -vIf you see the following output, congratulations! You have successfully installed Node.js.
+```bash
+node -v
+```
 
-v22.4.1### Laravel
+If you see the following output, congratulations! You have successfully installed Node.js.
+
+```bash
+v22.4.1
+```
+
+### Laravel
 
 It's time to give our project a name.
 
 How about this name: luckara?
 
-cd your_workspace_folder &amp;&amp; composer create-project laravel/laravel luckara## Run
+```bash
+cd your_workspace_folder &amp;&amp; composer create-project laravel/laravel luckara
+```
+
+## Run
 
 After the installation is complete, open the project with VSCode.
 
-cd luckara &amp;&amp; code .![](./images/06-Laravel_2.png)
+```bash
+cd luckara &amp;&amp; code .
+```
+
+![](./images/06-Laravel_2.png)
 
 Click “New Terminal” to open the terminal
 
